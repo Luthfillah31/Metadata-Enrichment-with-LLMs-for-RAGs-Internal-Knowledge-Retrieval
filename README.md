@@ -3,8 +3,10 @@
 This repository implements a comprehensive framework for enhancing Retrieval-Augmented Generation (RAG) systems through metadata enrichment, advanced chunking strategies, and neural retrieval techniques.
 
 <p align="center">
-  <img src="assets/pipeline_overview.png" alt="Pipeline Overview" width="800"/>
+![Architecture](https://github.com/PranavMishra17/MetadataEnrichment-for-RAG/blob/8cf89a5ff5f83c48d349ec0b415c28b10bd7f0c6/arch.png)
 </p>
+
+[Project Poster 2024](https://github.com/PranavMishra17/MetadataEnrichment-for-RAG/blob/main/Final_Poster.pdf)
 
 ## Table of Contents
 - [Introduction](#introduction)
