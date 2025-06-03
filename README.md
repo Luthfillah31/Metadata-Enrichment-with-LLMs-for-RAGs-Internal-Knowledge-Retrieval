@@ -3,10 +3,10 @@
 This repository implements a comprehensive framework for enhancing Retrieval-Augmented Generation (RAG) systems through metadata enrichment, advanced chunking strategies, and neural retrieval techniques.
 
 <p align="center">
-![Architecture](https://github.com/PranavMishra17/MetadataEnrichment-for-RAG/blob/8cf89a5ff5f83c48d349ec0b415c28b10bd7f0c6/arch.png)
+![Architecture](https://github.com/PranavMishra17/Metadata-Enrichment-with-LLMs-for-RAGs-Internal-Knowledge-Retrieval/blob/b8afc55c96e02d84faa596b5c045a28881998db0/pipeline.png)
 </p>
 
-[Project Poster 2024](https://github.com/PranavMishra17/MetadataEnrichment-for-RAG/blob/main/Final_Poster.pdf)
+[Project Poster 2024](https://github.com/PranavMishra17/Metadata-Enrichment-with-LLMs-for-RAGs-Internal-Knowledge-Retrieval/blob/af421087e43e33d41051a80356e285fa4c199b8a/Poster%202024.pdf)
 
 ## Table of Contents
 - [Introduction](#introduction)
