@@ -1,0 +1,46 @@
+{
+  "retrievers": [
+    "Content (naive)",
+    "Content (recursive)",
+    "Content (semantic)",
+    "Prefix-Fusion (naive)",
+    "Prefix-Fusion (recursive)",
+    "Prefix-Fusion (semantic)",
+    "TF-IDF (naive)",
+    "TF-IDF (recursive)",
+    "TF-IDF (semantic)"
+  ],
+  "faithfulness": {
+    "Content (naive)": 0.18121301115314065,
+    "Content (recursive)": 0.17825183587447008,
+    "Content (semantic)": 0.19525504506037947,
+    "Prefix-Fusion (naive)": 0.19951359926262924,
+    "Prefix-Fusion (recursive)": 0.19098363333611337,
+    "Prefix-Fusion (semantic)": 0.22207893736661038,
+    "TF-IDF (naive)": 0.19127742925884347,
+    "TF-IDF (recursive)": 0.19185633501099073,
+    "TF-IDF (semantic)": 0.19742674061523396
+  },
+  "accuracy": {
+    "Content (naive)": 0.20747611956280065,
+    "Content (recursive)": 0.1981321423806635,
+    "Content (semantic)": 0.18906243881518997,
+    "Prefix-Fusion (naive)": 0.21035236700108537,
+    "Prefix-Fusion (recursive)": 0.2072336926518599,
+    "Prefix-Fusion (semantic)": 0.20127855439056616,
+    "TF-IDF (naive)": 0.197549937321933,
+    "TF-IDF (recursive)": 0.20846055839969793,
+    "TF-IDF (semantic)": 0.19831293549504816
+  },
+  "combined": {
+    "Content (naive)": 0.19434456535797065,
+    "Content (recursive)": 0.1881919891275668,
+    "Content (semantic)": 0.1921587419377847,
+    "Prefix-Fusion (naive)": 0.20493298313185732,
+    "Prefix-Fusion (recursive)": 0.19910866299398663,
+    "Prefix-Fusion (semantic)": 0.21167874587858826,
+    "TF-IDF (naive)": 0.19441368329038822,
+    "TF-IDF (recursive)": 0.20015844670534433,
+    "TF-IDF (semantic)": 0.19786983805514108
+  }
+}

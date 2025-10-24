@@ -1,0 +1,4 @@
+chunking,content,prefix,tfidf
+naive,4.28,5.04,5.52
+recursive,4.36,5.92,5.28
+semantic,5.04,5.4,4.16

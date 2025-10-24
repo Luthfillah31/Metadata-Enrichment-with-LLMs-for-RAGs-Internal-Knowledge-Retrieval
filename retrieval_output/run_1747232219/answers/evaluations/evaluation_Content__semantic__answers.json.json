@@ -1,0 +1,5 @@
+{
+  "retriever_name": "Content__semantic__answers.json",
+  "error": "'NoneType' object is not callable",
+  "evaluations": {}
+}

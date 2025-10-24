@@ -84,6 +84,7 @@ python chunks.py --input_file path/to/document.txt --chunking_method recursive -
 
 # Process all files in a directory with evaluation
 python chunks.py --input_file path/to/documents/ --chunking_method naive --chunk_by paragraph --evaluate
+
 ```
 
 #### Command Line Arguments

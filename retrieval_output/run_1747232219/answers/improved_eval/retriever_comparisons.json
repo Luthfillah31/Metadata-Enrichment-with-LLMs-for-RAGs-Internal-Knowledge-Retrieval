@@ -1,0 +1,54 @@
+{
+  "faithfulness": {
+    "Content_vs_Prefix-Fusion": {
+      "t_statistic": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "better": "tie",
+      "values1_count": 120,
+      "values2_count": 120
+    },
+    "Content_vs_TF-IDF": {
+      "t_statistic": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "better": "tie",
+      "values1_count": 120,
+      "values2_count": 120
+    },
+    "Prefix-Fusion_vs_TF-IDF": {
+      "t_statistic": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "better": "tie",
+      "values1_count": 120,
+      "values2_count": 120
+    }
+  },
+  "accuracy": {
+    "Content_vs_Prefix-Fusion": {
+      "t_statistic": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "better": "tie",
+      "values1_count": 75,
+      "values2_count": 75
+    },
+    "Content_vs_TF-IDF": {
+      "t_statistic": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "better": "tie",
+      "values1_count": 75,
+      "values2_count": 75
+    },
+    "Prefix-Fusion_vs_TF-IDF": {
+      "t_statistic": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "better": "tie",
+      "values1_count": 75,
+      "values2_count": 75
+    }
+  }
+}

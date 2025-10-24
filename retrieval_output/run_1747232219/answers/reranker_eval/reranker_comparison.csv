@@ -1,0 +1,10 @@
+retriever,chunking,embedding,mean_score,median_score,wins,top3,mean_rank
+Content (naive),naive,content,0.9970332312583924,0.9988409876823425,6,12,4.28
+Content (recursive),recursive,content,0.9963632416725159,0.99897301197052,5,12,4.36
+Content (semantic),semantic,content,0.9948651218414306,0.9986909031867981,2,10,5.04
+Prefix-Fusion (naive),naive,prefix,0.9948492217063903,0.9989168643951416,1,8,5.04
+Prefix-Fusion (recursive),recursive,prefix,0.9877748990058899,0.9987452030181885,2,6,5.92
+Prefix-Fusion (semantic),semantic,prefix,0.9943675303459167,0.9982933402061462,2,7,5.4
+TF-IDF (naive),naive,tfidf,0.9948294162750244,0.9977287650108337,2,6,5.52
+TF-IDF (recursive),recursive,tfidf,0.9953693509101867,0.9987310767173767,1,5,5.28
+TF-IDF (semantic),semantic,tfidf,0.9960406112670899,0.9992843270301819,4,9,4.16

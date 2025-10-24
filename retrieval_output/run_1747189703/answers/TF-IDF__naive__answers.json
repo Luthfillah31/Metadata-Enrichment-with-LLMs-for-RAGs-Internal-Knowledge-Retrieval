@@ -1,0 +1,65 @@
+{
+  "retriever_name": "TF-IDF (naive)",
+  "answers": {
+    "q1": {
+      "query": "How do I create a bucket in S3?",
+      "answer": "Based on the provided context, here is how you can create a bucket in Amazon S3:\n\n1. **Sign in to the AWS Management Console**: Ensure you are signed in to your AWS account.\n  \n2. **Choose the AWS Region**: In the navigation bar at the top of the page, select the AWS Region where you want the bucket to be created. It is recommended to choose a Region geographically close to you to minimize latency and costs.\n\n3. **Create the Bucket**: Use the AWS Management Console to create a new bucket. Note that every bucket name must be unique across all AWS accounts in the same partition, and the name cannot be used again until the bucket is deleted.\n\nIf you need further details or steps, the context does not provide more specifics about the exact process. For additional guidance, refer to the Amazon Simple Storage Service User Guide in your AWS account.",
+      "num_chunks_used": 20,
+      "timestamp": "2025-05-13 19:34:12"
+    },
+    "q2": {
+      "query": "What is Amazon S3 Glacier?",
+      "answer": "Based on the provided context, Amazon S3 Glacier is a service designed for archival storage solutions. It appears to be used for storing data in vaults and interacting with the service through a set of RESTful API operations. However, the specific details or definition of Amazon S3 Glacier are not fully described in the provided context.",
+      "num_chunks_used": 20,
+      "timestamp": "2025-05-13 19:34:13"
+    },
+    "q3": {
+      "query": "How to upload files to S3?",
+      "answer": "The provided context does not include specific step-by-step instructions on how to upload files to Amazon S3. Please refer to the Amazon S3 User Guide or API Reference for detailed guidance on uploading files.",
+      "num_chunks_used": 20,
+      "timestamp": "2025-05-13 19:34:14"
+    },
+    "q4": {
+      "query": "S3 bucket access policy examples",
+      "answer": "The provided context mentions that the Amazon Simple Storage Service User Guide includes examples of Amazon S3 bucket policies. However, the actual examples of S3 bucket access policies are not included in the provided text. For detailed examples, you can refer to the section \"Examples of Amazon S3 bucket policies\" or \"Bucket policies for Amazon S3\" in the Amazon S3 documentation.",
+      "num_chunks_used": 20,
+      "timestamp": "2025-05-13 19:34:16"
+    },
+    "q5": {
+      "query": "Difference between S3 and Glacier storage",
+      "answer": "The provided context does not include specific information about the differences between Amazon S3 and Amazon S3 Glacier storage. It mentions archival storage and some details about S3 Glacier, but no direct comparison is provided. Therefore, I cannot answer the query based on the provided information.",
+      "num_chunks_used": 20,
+      "timestamp": "2025-05-13 19:34:29"
+    },
+    "q6": {
+      "query": "How to restore files from Glacier",
+      "answer": "Based on the provided context, you can restore files from Amazon S3 Glacier by downloading archives. The process involves using the AWS Command Line Interface (AWS CLI). However, specific commands or steps for restoring files are not detailed in the provided information. For complete instructions, you would need to refer to the relevant section in the Amazon S3 Glacier Developer Guide.",
+      "num_chunks_used": 20,
+      "timestamp": "2025-05-13 19:34:44"
+    },
+    "q7": {
+      "query": "S3 lifecycle configuration",
+      "answer": "The context provides scattered information about S3 Lifecycle configurations, but no detailed explanation or overview is given. Based on the provided context, I cannot provide a comprehensive answer about S3 Lifecycle configurations.",
+      "num_chunks_used": 20,
+      "timestamp": "2025-05-13 19:34:53"
+    },
+    "q8": {
+      "query": "Setting up cross-region replication in S3",
+      "answer": "The provided context does not include detailed step-by-step instructions for setting up cross-region replication (CRR) in Amazon S3. You may need to refer to the Amazon S3 User Guide or the AWS Management Console for detailed guidance on configuring cross-region replication.",
+      "num_chunks_used": 20,
+      "timestamp": "2025-05-13 19:34:56"
+    },
+    "q9": {
+      "query": "How to enable versioning in S3",
+      "answer": "To enable versioning on an S3 bucket:\n\n1. **Sign in to the AWS Management Console** and open the Amazon S3 console at [https://console.aws.amazon.com/s3/](https://console.aws.amazon.com/s3/).\n\n2. **Choose the Properties tab** for the bucket.\n\n3. Under **Bucket Versioning**, choose **Edit**.\n\n4. Edit the S3 Versioning settings for the bucket by selecting one of the following options:\n   - **Enabled**: Enables versioning for the objects in the bucket. All objects added to the bucket will receive a unique version ID.\n   - **Suspended**: Suspends versioning, but retains the existing version history.\n\n5. Save your changes. \n\nThis will enable or modify versioning for your specified S3 bucket.",
+      "num_chunks_used": 20,
+      "timestamp": "2025-05-13 19:34:59"
+    },
+    "q10": {
+      "query": "Creating a vault in Amazon Glacier",
+      "answer": "To create a vault in Amazon S3 Glacier, follow these steps:\n\n1. **Sign in to the AWS Management Console**:\n   - Open the S3 Glacier console at [https://console.aws.amazon.com/glacier/home](https://console.aws.amazon.com/glacier/home).\n\n2. **Select a Region**:\n   - Under \"Select a Region,\" choose the AWS Region where you want to create the vault.\n\n3. **Provide a Vault Name**:\n   - When creating the vault, specify a name that meets the following requirements:\n     - Names can be between 1 and 255 characters long.\n     - Allowed characters include a\u2013z, A\u2013Z, 0\u20139, underscores (_), dashes (-), and periods (.).\n\n4. **Submit the Request**:\n   - Follow the on-screen instructions in the console to finalize the vault creation.\n\nIf you're using APIs or SDKs, ensure you send the request to the endpoint specific to the AWS Region where the vault will be created. \n\nFor further details, refer to the Amazon S3 Glacier Developer Guide.",
+      "num_chunks_used": 20,
+      "timestamp": "2025-05-13 19:35:02"
+    }
+  }
+}

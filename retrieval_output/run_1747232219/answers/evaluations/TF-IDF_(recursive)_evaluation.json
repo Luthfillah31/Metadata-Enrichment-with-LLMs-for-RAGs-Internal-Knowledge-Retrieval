@@ -1,0 +1,1008 @@
+{
+  "retriever_name": "TF-IDF (recursive)",
+  "query_count": 25,
+  "avg_faithfulness": 0.19185633501099073,
+  "avg_accuracy": 0.20846055839969793,
+  "query_results": {
+    "q1": {
+      "faithfulness": 0.22433460076045628,
+      "accuracy": 0.2653061224489796,
+      "faithfulness_details": {
+        "response_entity_count": 149,
+        "chunk_entity_count": 263,
+        "overlap_entity_count": 59,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 2053
+      },
+      "accuracy_details": {
+        "response_entity_count": 149,
+        "gt_entity_count": 47,
+        "overlap_entity_count": 26,
+        "precision": 0.5531914893617021,
+        "recall": 0.174496644295302
+      }
+    },
+    "q2": {
+      "faithfulness": 0.21875,
+      "accuracy": 0.1372549019607843,
+      "faithfulness_details": {
+        "response_entity_count": 250,
+        "chunk_entity_count": 224,
+        "overlap_entity_count": 49,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 4965
+      },
+      "accuracy_details": {
+        "response_entity_count": 250,
+        "gt_entity_count": 56,
+        "overlap_entity_count": 21,
+        "precision": 0.375,
+        "recall": 0.084
+      }
+    },
+    "q3": {
+      "faithfulness": 0.22592592592592592,
+      "accuracy": 0.29545454545454547,
+      "faithfulness_details": {
+        "response_entity_count": 193,
+        "chunk_entity_count": 270,
+        "overlap_entity_count": 61,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 2815
+      },
+      "accuracy_details": {
+        "response_entity_count": 193,
+        "gt_entity_count": 71,
+        "overlap_entity_count": 39,
+        "precision": 0.5492957746478874,
+        "recall": 0.20207253886010362
+      }
+    },
+    "q4": {
+      "faithfulness": 0.14035087719298245,
+      "accuracy": 0.21960784313725493,
+      "faithfulness_details": {
+        "response_entity_count": 203,
+        "chunk_entity_count": 285,
+        "overlap_entity_count": 40,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 4155
+      },
+      "accuracy_details": {
+        "response_entity_count": 203,
+        "gt_entity_count": 52,
+        "overlap_entity_count": 28,
+        "precision": 0.5384615384615384,
+        "recall": 0.13793103448275862
+      }
+    },
+    "q5": {
+      "faithfulness": 0.17064846416382254,
+      "accuracy": 0.2336448598130841,
+      "faithfulness_details": {
+        "response_entity_count": 160,
+        "chunk_entity_count": 293,
+        "overlap_entity_count": 50,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 2181
+      },
+      "accuracy_details": {
+        "response_entity_count": 160,
+        "gt_entity_count": 54,
+        "overlap_entity_count": 25,
+        "precision": 0.46296296296296297,
+        "recall": 0.15625
+      }
+    },
+    "q6": {
+      "faithfulness": 0.19753086419753085,
+      "accuracy": 0.23529411764705885,
+      "faithfulness_details": {
+        "response_entity_count": 239,
+        "chunk_entity_count": 243,
+        "overlap_entity_count": 48,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 3515
+      },
+      "accuracy_details": {
+        "response_entity_count": 239,
+        "gt_entity_count": 67,
+        "overlap_entity_count": 36,
+        "precision": 0.5373134328358209,
+        "recall": 0.1506276150627615
+      }
+    },
+    "q7": {
+      "faithfulness": 0.2719665271966527,
+      "accuracy": 0.21875,
+      "faithfulness_details": {
+        "response_entity_count": 204,
+        "chunk_entity_count": 239,
+        "overlap_entity_count": 65,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 3406
+      },
+      "accuracy_details": {
+        "response_entity_count": 204,
+        "gt_entity_count": 52,
+        "overlap_entity_count": 28,
+        "precision": 0.5384615384615384,
+        "recall": 0.13725490196078433
+      }
+    },
+    "q8": {
+      "faithfulness": 0.2899628252788104,
+      "accuracy": 0.19852941176470587,
+      "faithfulness_details": {
+        "response_entity_count": 202,
+        "chunk_entity_count": 269,
+        "overlap_entity_count": 78,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 3208
+      },
+      "accuracy_details": {
+        "response_entity_count": 202,
+        "gt_entity_count": 70,
+        "overlap_entity_count": 27,
+        "precision": 0.38571428571428573,
+        "recall": 0.13366336633663367
+      }
+    },
+    "q9": {
+      "faithfulness": 0.23387096774193547,
+      "accuracy": 0.13194444444444445,
+      "faithfulness_details": {
+        "response_entity_count": 233,
+        "chunk_entity_count": 248,
+        "overlap_entity_count": 58,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 4511
+      },
+      "accuracy_details": {
+        "response_entity_count": 233,
+        "gt_entity_count": 55,
+        "overlap_entity_count": 19,
+        "precision": 0.34545454545454546,
+        "recall": 0.0815450643776824
+      }
+    },
+    "q10": {
+      "faithfulness": 0.23655913978494625,
+      "accuracy": 0.20233463035019453,
+      "faithfulness_details": {
+        "response_entity_count": 202,
+        "chunk_entity_count": 279,
+        "overlap_entity_count": 66,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 3257
+      },
+      "accuracy_details": {
+        "response_entity_count": 202,
+        "gt_entity_count": 55,
+        "overlap_entity_count": 26,
+        "precision": 0.4727272727272727,
+        "recall": 0.12871287128712872
+      }
+    },
+    "q11": {
+      "faithfulness": 0.2033898305084746,
+      "accuracy": 0.2184873949579832,
+      "faithfulness_details": {
+        "response_entity_count": 293,
+        "chunk_entity_count": 295,
+        "overlap_entity_count": 60,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 5727
+      },
+      "accuracy_details": {
+        "response_entity_count": 293,
+        "gt_entity_count": 64,
+        "overlap_entity_count": 39,
+        "precision": 0.609375,
+        "recall": 0.13310580204778158
+      }
+    },
+    "q12": {
+      "faithfulness": 0.28085106382978725,
+      "accuracy": 0.2469879518072289,
+      "faithfulness_details": {
+        "response_entity_count": 257,
+        "chunk_entity_count": 235,
+        "overlap_entity_count": 66,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 3917
+      },
+      "accuracy_details": {
+        "response_entity_count": 257,
+        "gt_entity_count": 75,
+        "overlap_entity_count": 41,
+        "precision": 0.5466666666666666,
+        "recall": 0.15953307392996108
+      }
+    },
+    "q13": {
+      "faithfulness": 0.21333333333333335,
+      "accuracy": 0.1780104712041885,
+      "faithfulness_details": {
+        "response_entity_count": 311,
+        "chunk_entity_count": 300,
+        "overlap_entity_count": 64,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 4727
+      },
+      "accuracy_details": {
+        "response_entity_count": 311,
+        "gt_entity_count": 71,
+        "overlap_entity_count": 34,
+        "precision": 0.4788732394366197,
+        "recall": 0.10932475884244373
+      }
+    },
+    "q14": {
+      "faithfulness": 0.13636363636363635,
+      "accuracy": 0.23125,
+      "faithfulness_details": {
+        "response_entity_count": 245,
+        "chunk_entity_count": 264,
+        "overlap_entity_count": 36,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 3459
+      },
+      "accuracy_details": {
+        "response_entity_count": 245,
+        "gt_entity_count": 75,
+        "overlap_entity_count": 37,
+        "precision": 0.49333333333333335,
+        "recall": 0.1510204081632653
+      }
+    },
+    "q15": {
+      "faithfulness": 0.1461794019933555,
+      "accuracy": 0.1834061135371179,
+      "faithfulness_details": {
+        "response_entity_count": 175,
+        "chunk_entity_count": 301,
+        "overlap_entity_count": 44,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 2838
+      },
+      "accuracy_details": {
+        "response_entity_count": 175,
+        "gt_entity_count": 54,
+        "overlap_entity_count": 21,
+        "precision": 0.3888888888888889,
+        "recall": 0.12
+      }
+    },
+    "q16": {
+      "faithfulness": 0.14420062695924765,
+      "accuracy": 0.12532637075718014,
+      "faithfulness_details": {
+        "response_entity_count": 304,
+        "chunk_entity_count": 319,
+        "overlap_entity_count": 46,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 3799
+      },
+      "accuracy_details": {
+        "response_entity_count": 304,
+        "gt_entity_count": 79,
+        "overlap_entity_count": 24,
+        "precision": 0.3037974683544304,
+        "recall": 0.07894736842105263
+      }
+    },
+    "q17": {
+      "faithfulness": 0.16666666666666666,
+      "accuracy": 0.23974763406940064,
+      "faithfulness_details": {
+        "response_entity_count": 232,
+        "chunk_entity_count": 336,
+        "overlap_entity_count": 56,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 3324
+      },
+      "accuracy_details": {
+        "response_entity_count": 232,
+        "gt_entity_count": 85,
+        "overlap_entity_count": 38,
+        "precision": 0.4470588235294118,
+        "recall": 0.16379310344827586
+      }
+    },
+    "q18": {
+      "faithfulness": 0.22568093385214008,
+      "accuracy": 0.17563739376770537,
+      "faithfulness_details": {
+        "response_entity_count": 292,
+        "chunk_entity_count": 257,
+        "overlap_entity_count": 58,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 4605
+      },
+      "accuracy_details": {
+        "response_entity_count": 292,
+        "gt_entity_count": 61,
+        "overlap_entity_count": 31,
+        "precision": 0.5081967213114754,
+        "recall": 0.10616438356164383
+      }
+    },
+    "q19": {
+      "faithfulness": 0.10309278350515463,
+      "accuracy": 0.19310344827586204,
+      "faithfulness_details": {
+        "response_entity_count": 225,
+        "chunk_entity_count": 291,
+        "overlap_entity_count": 30,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 4001
+      },
+      "accuracy_details": {
+        "response_entity_count": 225,
+        "gt_entity_count": 65,
+        "overlap_entity_count": 28,
+        "precision": 0.4307692307692308,
+        "recall": 0.12444444444444444
+      }
+    },
+    "q20": {
+      "faithfulness": 0.14642857142857144,
+      "accuracy": 0.24472573839662448,
+      "faithfulness_details": {
+        "response_entity_count": 177,
+        "chunk_entity_count": 280,
+        "overlap_entity_count": 41,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 3200
+      },
+      "accuracy_details": {
+        "response_entity_count": 177,
+        "gt_entity_count": 60,
+        "overlap_entity_count": 29,
+        "precision": 0.48333333333333334,
+        "recall": 0.1638418079096045
+      }
+    },
+    "q21": {
+      "faithfulness": 0.1342281879194631,
+      "accuracy": 0.2298850574712643,
+      "faithfulness_details": {
+        "response_entity_count": 275,
+        "chunk_entity_count": 298,
+        "overlap_entity_count": 40,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 4240
+      },
+      "accuracy_details": {
+        "response_entity_count": 275,
+        "gt_entity_count": 73,
+        "overlap_entity_count": 40,
+        "precision": 0.547945205479452,
+        "recall": 0.14545454545454545
+      }
+    },
+    "q22": {
+      "faithfulness": 0.16593886462882096,
+      "accuracy": 0.20320855614973263,
+      "faithfulness_details": {
+        "response_entity_count": 311,
+        "chunk_entity_count": 229,
+        "overlap_entity_count": 38,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 5508
+      },
+      "accuracy_details": {
+        "response_entity_count": 311,
+        "gt_entity_count": 63,
+        "overlap_entity_count": 38,
+        "precision": 0.6031746031746031,
+        "recall": 0.12218649517684887
+      }
+    },
+    "q23": {
+      "faithfulness": 0.17301038062283736,
+      "accuracy": 0.1301775147928994,
+      "faithfulness_details": {
+        "response_entity_count": 276,
+        "chunk_entity_count": 289,
+        "overlap_entity_count": 50,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 4048
+      },
+      "accuracy_details": {
+        "response_entity_count": 276,
+        "gt_entity_count": 62,
+        "overlap_entity_count": 22,
+        "precision": 0.3548387096774194,
+        "recall": 0.07971014492753623
+      }
+    },
+    "q24": {
+      "faithfulness": 0.13533834586466165,
+      "accuracy": 0.2966101694915254,
+      "faithfulness_details": {
+        "response_entity_count": 185,
+        "chunk_entity_count": 266,
+        "overlap_entity_count": 36,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 4142
+      },
+      "accuracy_details": {
+        "response_entity_count": 185,
+        "gt_entity_count": 51,
+        "overlap_entity_count": 35,
+        "precision": 0.6862745098039216,
+        "recall": 0.1891891891891892
+      }
+    },
+    "q25": {
+      "faithfulness": 0.21180555555555555,
+      "accuracy": 0.1768292682926829,
+      "faithfulness_details": {
+        "response_entity_count": 248,
+        "chunk_entity_count": 288,
+        "overlap_entity_count": 61,
+        "chunk_count": 20,
+        "chunk_text_lengths": [
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203,
+          203
+        ],
+        "response_length": 3768
+      },
+      "accuracy_details": {
+        "response_entity_count": 248,
+        "gt_entity_count": 80,
+        "overlap_entity_count": 29,
+        "precision": 0.3625,
+        "recall": 0.11693548387096774
+      }
+    }
+  }
+}
