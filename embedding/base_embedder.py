@@ -24,7 +24,8 @@ class BaseEmbedder(ABC):
         input_dir: str = "metadata_gen_output",
         output_dir: str = "embeddings_output",
         chunking_type: str = "semantic",
-        model_name: str = "Snowflake/arctic-embed-s"
+        model_name: str = "Snowflake/arctic-embed-s",
+        metadata_filter: List[str] = None
     ):
         """Initialize the base embedder.
         
@@ -33,11 +34,13 @@ class BaseEmbedder(ABC):
             output_dir: Output directory for embeddings
             chunking_type: Type of chunking (semantic, naive, recursive)
             model_name: Name of the embedding model to use
+            metadata_filter: List of metadata categories to include (content, technical, semantic). If None, include all.
         """
         self.input_dir = input_dir
         self.output_dir = output_dir
         self.chunking_type = chunking_type
         self.model_name = model_name
+        self.metadata_filter = metadata_filter
         self.logger = setup_logger(self.__class__.__name__)
         
         # Create necessary directories

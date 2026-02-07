@@ -3,6 +3,7 @@
 import os
 import argparse
 import json
+import time
 from typing import Dict, Any
 import glob
 
@@ -163,6 +164,7 @@ def process_files(args, logger):
     return results
 
 
+
 def evaluate_chunks(results, logger):
     """Evaluate chunks using the ChunkEvaluator."""
     logger.info("Evaluating chunks...")
@@ -228,7 +230,23 @@ def main():
         logger.info(f"Created output directory: {args.output_dir}")
     
     # Process files
+    start_time = time.time()
     results = process_files(args, logger)
+    total_time = time.time() - start_time
+    logger.info(f"Chunking completed in {total_time:.2f} seconds")
+    
+    # Save validation stats if results exist
+    if results:
+        stats = {
+           "operation": "chunking",
+           "method": args.chunking_method,
+           "total_time_seconds": total_time, 
+           "num_files": len(results),
+           "processed_at": time.strftime("%Y-%m-%d %H:%M:%S")
+        }
+        stats_path = os.path.join(args.output_dir, "chunking_stats.json")
+        with open(stats_path, "w") as f:
+             json.dump(stats, f, indent=2)
     
     if not results:
         logger.warning("No files were successfully processed")

@@ -262,6 +262,7 @@ def run_retrieval(retriever_info: Dict[str, Any], queries: Dict[str, str], outpu
     completed_count = 0
     total_count = len(queries)
     start_time = time.time()
+    latencies = []
     
     try:
         for query_id, query_text in queries.items():
@@ -269,8 +270,15 @@ def run_retrieval(retriever_info: Dict[str, Any], queries: Dict[str, str], outpu
             if query_id in results:
                 continue
             
+            # Measure latency
+            q_start = time.time()
+            
             # Retrieve results
             retrieval_results = retriever.retrieve(query_text)
+            
+            q_end = time.time()
+            query_latency = q_end - q_start
+            latencies.append(query_latency)
             
             # Enhance results with full chunk content if missing
             for result in retrieval_results:
@@ -300,6 +308,16 @@ def run_retrieval(retriever_info: Dict[str, Any], queries: Dict[str, str], outpu
         # Save current results
         with open(checkpoint_file, "w", encoding="utf-8") as f:
             json.dump(results, f, indent=2)
+            
+    # Calculate Latency Stats
+    latency_p50 = 0.0
+    latency_p95 = 0.0
+    if latencies:
+        import numpy as np
+        latency_p50 = float(np.percentile(latencies, 50))
+        latency_p95 = float(np.percentile(latencies, 95))
+        logger.info(f"Latency P50: {latency_p50:.4f}s, P95: {latency_p95:.4f}s")
+
     
     # Save final results in a standardized format
     final_output = {
@@ -308,7 +326,9 @@ def run_retrieval(retriever_info: Dict[str, Any], queries: Dict[str, str], outpu
             "retriever_type": retriever_info["type"],
             "chunking_type": retriever_info["chunking"],
             "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
-            "top_k": retriever.top_k
+            "top_k": retriever.top_k,
+            "latency_p50": latency_p50,
+            "latency_p95": latency_p95
         },
         "queries": {
             query_id: {

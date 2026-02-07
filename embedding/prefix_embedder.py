@@ -14,6 +14,18 @@ gpu_verifier = GPUVerifier(require_gpu=True)
 class PrefixEmbedder(BaseEmbedder):
     """Prefix-injection embedding strategy that prepends metadata to content."""
     
+    def __init__(
+        self,
+        input_dir: str = "metadata_gen_output",
+        output_dir: str = "embeddings_output",
+        chunking_type: str = "semantic",
+        model_name: str = "Snowflake/arctic-embed-s",
+        metadata_filter: List[str] = None
+    ):
+        """Initialize the Prefix embedder."""
+        super().__init__(input_dir, output_dir, chunking_type, model_name, metadata_filter)
+
+    
     def _get_embedding_type_dir(self) -> str:
         """Get the directory name for prefix embeddings."""
         return os.path.join(self.output_chunking_dir, "prefix_fusion_embedding")
@@ -101,28 +113,30 @@ class PrefixEmbedder(BaseEmbedder):
         return f"[Q:{q_text}]"
     
     def _format_prefixes(self, metadata: Dict[str, Any]) -> str:
-        """Format metadata as prefixes for embedding."""
-        # Intent prefix (25%)
-        intent_prefix = self._format_intent(metadata)
+        all_prefixes = []
+        # Intent prefix (25%) -> Semantic
+        if not self.metadata_filter or "semantic" in self.metadata_filter:
+            all_prefixes.append(self._format_intent(metadata))
         
-        # Service context prefix (20%)
-        service_prefix = self._format_service_context(metadata)
+        # Service context prefix (20%) -> Technical
+        if not self.metadata_filter or "technical" in self.metadata_filter:
+            all_prefixes.append(self._format_service_context(metadata))
         
-        # Content type prefix (15%)
-        content_type_prefix = self._format_content_type(metadata)
+        # Content type prefix (15%) -> Content
+        if not self.metadata_filter or "content" in self.metadata_filter:
+            all_prefixes.append(self._format_content_type(metadata))
         
-        # Technical category prefix (10%)
-        category_prefix = self._format_technical_category(metadata)
+        # Technical category prefix (10%) -> Technical
+        if not self.metadata_filter or "technical" in self.metadata_filter:
+            all_prefixes.append(self._format_technical_category(metadata))
         
-        # Code presence prefix (10%)
-        code_prefix = self._format_code_presence(metadata)
+        # Code presence prefix (10%) -> Content
+        if not self.metadata_filter or "content" in self.metadata_filter:
+            all_prefixes.append(self._format_code_presence(metadata))
         
-        # Potential question prefix (20%)
-        question_prefix = self._format_potential_question(metadata)
-        
-        # Combine all prefixes
-        all_prefixes = [intent_prefix, service_prefix, content_type_prefix, 
-                       category_prefix, code_prefix, question_prefix]
+        # Potential question prefix (20%) -> Semantic
+        if not self.metadata_filter or "semantic" in self.metadata_filter:
+            all_prefixes.append(self._format_potential_question(metadata))
         
         return " ".join([p for p in all_prefixes if p])
     

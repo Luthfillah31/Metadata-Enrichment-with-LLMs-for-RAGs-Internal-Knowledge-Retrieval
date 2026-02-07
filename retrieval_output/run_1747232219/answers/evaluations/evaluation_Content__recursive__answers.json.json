@@ -1,5 +1,0 @@
-{
-  "retriever_name": "Content__recursive__answers.json",
-  "error": "'NoneType' object is not callable",
-  "evaluations": {}
-}

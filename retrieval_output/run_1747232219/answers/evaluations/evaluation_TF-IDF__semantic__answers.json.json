@@ -1,5 +1,0 @@
-{
-  "retriever_name": "TF-IDF__semantic__answers.json",
-  "error": "'NoneType' object is not callable",
-  "evaluations": {}
-}

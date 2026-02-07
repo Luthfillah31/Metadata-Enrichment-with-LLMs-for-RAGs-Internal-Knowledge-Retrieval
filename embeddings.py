@@ -78,7 +78,7 @@ def create_embeddings(args):
         # Process each embedding type
         for embedding_type in args.embedding_types:
             try:
-                start_time = time.time()
+                start_time = time.time() # Timer for the whole embedding process for this type/chunking
                 
                 if embedding_type.lower() == "naive":
                     logger.info(f"Generating naive embeddings for {chunking_type} chunks")

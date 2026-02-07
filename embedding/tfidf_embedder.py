@@ -19,9 +19,11 @@ class TfidfEmbedder(BaseEmbedder):
         input_dir: str = "metadata_gen_output",
         output_dir: str = "embeddings_output",
         chunking_type: str = "semantic",
+
         model_name: str = "Snowflake/arctic-embed-s",
         content_weight: float = 0.7,
-        tfidf_weight: float = 0.3
+        tfidf_weight: float = 0.3,
+        metadata_filter: List[str] = None
     ):
         """Initialize the TF-IDF embedder.
         
@@ -32,8 +34,9 @@ class TfidfEmbedder(BaseEmbedder):
             model_name: Name of the embedding model to use
             content_weight: Weight for content embeddings (default: 0.7)
             tfidf_weight: Weight for TF-IDF embeddings (default: 0.3)
+            metadata_filter: List of metadata categories to include
         """
-        super().__init__(input_dir, output_dir, chunking_type, model_name)
+        super().__init__(input_dir, output_dir, chunking_type, model_name, metadata_filter)
         self.content_weight = content_weight
         self.tfidf_weight = tfidf_weight
         self.vectorizer = None
@@ -78,15 +81,7 @@ class TfidfEmbedder(BaseEmbedder):
         metadata = chunk.get("metadata", {})
         
         # Technical keywords (40%)
-        if "content" in metadata and "keywords" in metadata["content"]:
-            keywords.extend(metadata["content"]["keywords"])
-        
-        # Named entities (25%)
-        if "content" in metadata and "entities" in metadata["content"]:
-            keywords.extend(metadata["content"]["entities"])
-        
-        # Technical categories (20%)
-        if "technical" in metadata:
+        if (not self.metadata_filter or "technical" in self.metadata_filter) and "technical" in metadata:
             if "primary_category" in metadata["technical"]:
                 keywords.append(metadata["technical"]["primary_category"])
             
@@ -96,8 +91,15 @@ class TfidfEmbedder(BaseEmbedder):
             if "mentioned_services" in metadata["technical"]:
                 keywords.extend(metadata["technical"]["mentioned_services"])
         
-        # Question keywords (15%)
-        if "semantic" in metadata and "potential_questions" in metadata["semantic"]:
+        # Content keywords
+        if (not self.metadata_filter or "content" in self.metadata_filter) and "content" in metadata:
+            if "keywords" in metadata["content"]:
+                keywords.extend(metadata["content"]["keywords"])
+            if "entities" in metadata["content"]:
+                keywords.extend(metadata["content"]["entities"])
+
+        # Semantic keywords (Questions) (15%)
+        if (not self.metadata_filter or "semantic" in self.metadata_filter) and "semantic" in metadata and "potential_questions" in metadata["semantic"]:
             for question in metadata["semantic"]["potential_questions"]:
                 # Simple keyword extraction by removing common words
                 words = question.lower().replace("?", "").replace(",", " ").replace(".", " ").split()
