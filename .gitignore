@@ -64,3 +64,6 @@ config.py  # Keep config.py? It's core configuration. I will keep it for now as 
 
 # Poster
 Poster 2024.pdf
+# pixi environments
+.pixi/*
+!.pixi/config.toml
