@@ -10,6 +10,8 @@ version = "0.1.0"
 [dependencies]
 python = "3.12.*"
 nltk = ">=3.9.3,<4"
+numpy = "<2.2.0"
+langchain = ">=1.2.12,<2"
 
 [pypi-dependencies]
 numpy = ">=1.20.0"

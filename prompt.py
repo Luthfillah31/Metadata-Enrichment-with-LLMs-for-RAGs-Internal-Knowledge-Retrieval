@@ -6,8 +6,8 @@ import logging
 import argparse
 from typing import List, Dict, Any
 import concurrent.futures
-from langchain_openai import AzureChatOpenAI
-from langchain.schema import HumanMessage, SystemMessage
+from openai import OpenAI
+from langchain.messages import HumanMessage, SystemMessage
 import config
 
 # Configure logging
@@ -21,7 +21,7 @@ class LLMProcessor:
     """Class to handle LLM interactions."""
     
     def __init__(self, model_name=None, temperature=0.5, max_retries=3, retry_delay=5):
-        self.model_name = model_name or config.AZURE_DEPLOYMENT
+        self.model_name = model_name or config.MODEL
         self.temperature = temperature
         self.max_retries = max_retries
         self.retry_delay = retry_delay
@@ -31,12 +31,9 @@ class LLMProcessor:
     def initialize_llm(self):
         """Initialize the LLM client."""
         try:
-            self.client = AzureChatOpenAI(
-                azure_deployment=config.AZURE_DEPLOYMENT,
-                api_key=config.AZURE_API_KEY,
-                api_version=config.AZURE_API_VERSION,
-                azure_endpoint=config.AZURE_ENDPOINT,
-                temperature=self.temperature
+            self.client = OpenAI(
+                base_url="http://localhost:11434/v1/",
+                api_key="ollama",
             )
             logger.info("LLM initialized successfully")
         except Exception as e:
@@ -54,15 +51,20 @@ class LLMProcessor:
         user_msg = f"Query: {query}\n\nContext:\n{context}"
         
         messages = [
-            SystemMessage(content=system_msg),
-            HumanMessage(content=user_msg)
+            {"role": "system", "content": system_msg},
+            {"role": "user", "content": user_msg}
         ]
         
         # Try to generate with retries
         for attempt in range(self.max_retries):
             try:
-                response = self.client.invoke(messages)
-                return response.content
+                response = self.client.chat.completions.create(
+                        model="deepseek-v3.1:671b-cloud", # Replace this with your actual Ollama model name if different
+                        messages=messages,
+                        temperature=0.1 # Keeping temperature low is highly recommended for strict JSON output
+                    )
+                content = response.choices[0].message.content
+                return content
             except Exception as e:
                 logger.error(f"Error generating answer (attempt {attempt+1}/{self.max_retries}): {str(e)}")
                 if attempt < self.max_retries - 1:

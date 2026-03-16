@@ -3,7 +3,7 @@ import time
 import os
 from typing import Dict, List, Any, Optional
 import random
-from langchain_openai import AzureChatOpenAI
+from openai import OpenAI
 import re
 import config
 from metadata.base_metadata_generator import BaseMetadataGenerator
@@ -22,12 +22,9 @@ class LLMMetadataGenerator(BaseMetadataGenerator):
         
         # Initialize LLM
         try:
-            self.client = AzureChatOpenAI(
-                azure_deployment=config.AZURE_DEPLOYMENT,
-                api_key=config.AZURE_API_KEY,
-                api_version=config.AZURE_API_VERSION,
-                azure_endpoint=config.AZURE_ENDPOINT,
-                temperature=config.TEMPERATURE
+            self.client = OpenAI(
+                base_url="http://localhost:11434/v1/",
+                api_key="ollama",
             )
             self.logger.info("LLM initialized successfully")
         except Exception as e:
@@ -78,7 +75,7 @@ class LLMMetadataGenerator(BaseMetadataGenerator):
         # Add metadata about the enrichment process
         result["metadata"]["enrichment"] = {
             "method": "llm",
-            "model": config.AZURE_DEPLOYMENT,
+            "model": "deepseek-v3.1:671b-cloud",
             "enriched_at": time.strftime("%Y-%m-%d %H:%M:%S")
         }
         
@@ -180,8 +177,14 @@ class LLMMetadataGenerator(BaseMetadataGenerator):
             # Call LLM with retries for rate limits
             for attempt in range(config.RETRY_LIMIT):
                 try:
-                    response = self.client.invoke(prompt)
-                    content = response.content
+                    response = self.client.chat.completions.create(
+                        model="deepseek-v3.1:671b-cloud", # Replace this with your actual Ollama model name if different
+                        messages=[
+                            {"role": "user", "content": prompt}
+                        ],
+                        temperature=0.1 # Keeping temperature low is highly recommended for strict JSON output
+                    )
+                    content = response.choices[0].message.content
                     
                     # Log the raw response
                     self.logger.debug(f"Raw LLM response: {content}")
@@ -237,8 +240,14 @@ class LLMMetadataGenerator(BaseMetadataGenerator):
             # Call LLM with retries
             for attempt in range(config.RETRY_LIMIT):
                 try:
-                    response = self.client.invoke(prompt)
-                    content = response.content
+                    response = self.client.chat.completions.create(
+                        model="deepseek-v3.1:671b-cloud", # Replace this with your actual Ollama model name if different
+                        messages=[
+                            {"role": "user", "content": prompt}
+                        ],
+                        temperature=0.1 # Keeping temperature low is highly recommended for strict JSON output
+                    )
+                    content = response.choices[0].message.content
                     
                     # Log the raw response
                     self.logger.debug(f"Raw LLM response: {content}")
@@ -292,8 +301,14 @@ class LLMMetadataGenerator(BaseMetadataGenerator):
             # Call LLM with retries
             for attempt in range(config.RETRY_LIMIT):
                 try:
-                    response = self.client.invoke(prompt)
-                    content = response.content
+                    response = self.client.chat.completions.create(
+                        model="deepseek-v3.1:671b-cloud", # Replace this with your actual Ollama model name if different
+                        messages=[
+                            {"role": "user", "content": prompt}
+                        ],
+                        temperature=0.1 # Keeping temperature low is highly recommended for strict JSON output
+                    )
+                    content = response.choices[0].message.content
                     
                     # Log the raw response
                     self.logger.debug(f"Raw LLM response: {content}")
@@ -358,8 +373,14 @@ class LLMMetadataGenerator(BaseMetadataGenerator):
             # Call LLM with retries for rate limits
             for attempt in range(config.RETRY_LIMIT):
                 try:
-                    response = self.client.invoke(prompt)
-                    content = response.content
+                    response = self.client.chat.completions.create(
+                        model="deepseek-v3.1:671b-cloud", # Replace this with your actual Ollama model name if different
+                        messages=[
+                            {"role": "user", "content": prompt}
+                        ],
+                        temperature=0.1 # Keeping temperature low is highly recommended for strict JSON output
+                    )
+                    content = response.choices[0].message.content
                     
                     # Log the raw response
                     self.logger.debug(f"Raw LLM response: {content}")

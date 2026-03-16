@@ -463,16 +463,11 @@ def generate_default_queries() -> Tuple[Dict[str, str], Dict[str, List[str]]]:
     """
     # Create some sample AWS S3 and Glacier queries
     queries = {
-        "q1": "How do I create a bucket in S3?",
-        "q2": "What is Amazon S3 Glacier?",
-        "q3": "How to upload files to S3?",
-        "q4": "S3 bucket access policy examples",
-        "q5": "Difference between S3 and Glacier storage",
-        "q6": "How to restore files from Glacier",
-        "q7": "S3 lifecycle configuration",
-        "q8": "Setting up cross-region replication in S3",
-        "q9": "How to enable versioning in S3",
-        "q10": "Creating a vault in Amazon Glacier"
+        "q1": "What percentage of the insurance premium does the company pay for medical coverage compared to dental and vision coverage for US employees?",
+        "q2": "What is the maximum percentage of an employee's salary that 37signals will match for retirement contributions?",
+        "q3": "How many years must an employee work before they are eligible for a paid sabbatical, and how long is the sabbatical?",
+        "q4": "During which months of the year do employees transition to a 4-day work week?",
+        "q5": "What is the maximum amount a new employee can expense for their home office setup during their first year?"
     }
     
     # Empty relevance judgments (no ground truth)
