@@ -1,0 +1,32 @@
+{
+    "retrieval_output/run_1775670230/answers/Content__naive__answers.json": {
+        "Accuracy (0-1)": 0.202,
+        "Accuracy (%)": "20.2%",
+        "Groundedness": "N/A (No Context Data in JSON)",
+        "Avg Latency (s)": "N/A (No Latency Data in JSON)"
+    },
+    "retrieval_output/run_1775670230/answers/Content__semantic__answers.json": {
+        "Accuracy (0-1)": 0.262,
+        "Accuracy (%)": "26.2%",
+        "Groundedness": "N/A (No Context Data in JSON)",
+        "Avg Latency (s)": "N/A (No Latency Data in JSON)"
+    },
+    "retrieval_output/run_1775670230/answers/Prefix-Fusion__semantic__answers.json": {
+        "Accuracy (0-1)": 0.234,
+        "Accuracy (%)": "23.4%",
+        "Groundedness": "N/A (No Context Data in JSON)",
+        "Avg Latency (s)": "N/A (No Latency Data in JSON)"
+    },
+    "retrieval_output/run_1775670230/answers/TF-IDF__naive__answers.json": {
+        "Accuracy (0-1)": 0.22,
+        "Accuracy (%)": "22.0%",
+        "Groundedness": "N/A (No Context Data in JSON)",
+        "Avg Latency (s)": "N/A (No Latency Data in JSON)"
+    },
+    "retrieval_output/run_1775670230/answers/TF-IDF__semantic__answers.json": {
+        "Accuracy (0-1)": 0.238,
+        "Accuracy (%)": "23.8%",
+        "Groundedness": "N/A (No Context Data in JSON)",
+        "Avg Latency (s)": "N/A (No Latency Data in JSON)"
+    }
+}

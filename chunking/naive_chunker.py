@@ -13,13 +13,11 @@ gpu_verifier = GPUVerifier(require_gpu=True)
 class NaiveChunker(BaseChunker):
     """Naive chunking strategy that splits text by paragraphs or fixed number of sentences."""
 
-
-    
     def __init__(
         self,
         chunk_by: str = "paragraph",
-        min_chunk_size: int = 2,
-        max_chunk_size: int = 10,
+        min_chunk_size: int = 1,
+        max_chunk_size: int = 100,
         overlap: int = 1,
         output_dir: str = "chunk_output"
     ):

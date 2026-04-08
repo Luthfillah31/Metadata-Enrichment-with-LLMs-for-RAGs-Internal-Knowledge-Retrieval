@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "query": "What is the specific title of the joint research collaboration proposed between Telkom University and UNISZA?",
+    "jawaban": "The title of the collaboration is 'Multimodal sentiment Analysis for Indonesian Local Languages using Machine Learning Approaches'."
+  },
+  {
+    "id": 2,
+    "query": "Who is the Principal Investigator representing Universitas Telkom in the Letter of Intent with UNISZA?",
+    "jawaban": "Kemas Rahmat Saleh, Ph.D. is the Principal Investigator for Universitas Telkom."
+  },
+  {
+    "id": 3,
+    "query": "How much research funding is UNISZA committed to providing according to the Letter of Intent?",
+    "jawaban": "UNISZA shall provide a research grant of Twenty Thousand Malaysian Ringgit (20,000 MYR)."
+  },
+  {
+    "id": 4,
+    "query": "What mechanism will be used to execute the matching funds between TEL-U and UNISZA?",
+    "jawaban": "The matching funds will be executed through a cross-transfer mechanism between both institutions."
+  },
+  {
+    "id": 5,
+    "query": "Who approved the Letter of Intent on behalf of Telkom University as the Director of Research and Community Service?",
+    "jawaban": "Dr. Eng. Faisal Budiman, S.T., M.Sc. approved the Letter of Intent."
+  },
+  {
+    "id": 6,
+    "query": "What is the scientific name of the Rawit chili plant as mentioned in the SOP manual?",
+    "jawaban": "The scientific name is Capsicum frutescens L."
+  },
+  {
+    "id": 7,
+    "query": "According to the SOP, what is the ideal altitude range for planting Rawit chili in Indonesia?",
+    "jawaban": "The ideal altitude range is between 0 to 1000 meters above sea level."
+  },
+  {
+    "id": 8,
+    "query": "What is the recommended soil pH for Rawit chili cultivation?",
+    "jawaban": "The recommended soil pH range is 6.0 to 7.0."
+  },
+  {
+    "id": 9,
+    "query": "What are the primary objectives of post-harvest handling for chili fruits?",
+    "jawaban": "The objectives are to ensure freshness, size uniformity, and quality of the fruit according to market demand."
+  },
+  {
+    "id": 10,
+    "query": "What should be done with harvested chili fruits to prevent decay before storage?",
+    "jawaban": "The harvested fruits should be air-dried (keringanginkan) to prevent rotting."
+  },
+  {
+    "id": 11,
+    "query": "In 37signals' work culture, how many continents does the team work across?",
+    "jawaban": "The team works across 5 continents as a fully distributed company."
+  },
+  {
+    "id": 12,
+    "query": "What is the fixed duration of a work cycle at 37signals?",
+    "jawaban": "A work cycle at 37signals lasts for 6 weeks."
+  },
+  {
+    "id": 13,
+    "query": "How long is the 'cooldown' period between work cycles at 37signals?",
+    "jawaban": "The cooldown period lasts for two weeks."
+  },
+  {
+    "id": 14,
+    "query": "What happens during the two-week cooldown period at 37signals?",
+    "jawaban": "Product teams deal with bugs, everyone writes up what they worked on, and teams decide what to tackle next."
+  },
+  {
+    "id": 15,
+    "query": "What does the term 'manager of one' mean in the context of 37signals employees?",
+    "jawaban": "It refers to people who set their own direction when none is given and determine what needs to be done without waiting for instructions."
+  },
+  {
+    "id": 16,
+    "query": "How many hours per week is the standard work week at 37signals during the summer?",
+    "jawaban": "During the summer, the work week is limited to 32 hours."
+  },
+  {
+    "id": 17,
+    "query": "How often should employees answer the 'What did you work on today?' check-in at 37signals?",
+    "jawaban": "Employees are required to answer at least twice a week."
+  },
+  {
+    "id": 18,
+    "query": "What is the purpose of 'Heartbeats' in 37signals communication?",
+    "jawaban": "They are weekly or cycle-based summaries written by teams to communicate what they've finished to the rest of the company."
+  },
+  {
+    "id": 19,
+    "query": "Why are birds not affected by the heat (capsaicin) in chili fruits?",
+    "jawaban": "Birds are biologically resistant to the heat component (capsaicin), which allows them to eat the fruits and scatter seeds."
+  },
+  {
+    "id": 20,
+    "query": "What specific nutrient in chili leaves is known to reduce the risk of cataracts?",
+    "jawaban": "Lutein is the carotenoid in chili leaves that supports eye health and reduces cataract risk."
+  },
+  {
+    "id": 21,
+    "query": "Based on the 2012 Aruligo study, what is the Nitrogen (N) percentage in chili leaves?",
+    "jawaban": "The Nitrogen content is 3.2% of the dry weight."
+  },
+  {
+    "id": 22,
+    "query": "Which mineral has the highest concentration in chili leaves according to the nutrition factsheet?",
+    "jawaban": "Potassium (K) has the highest concentration at 50,000 mg/kg dry weight."
+  },
+  {
+    "id": 23,
+    "query": "What is the recommended storage method for maintaining chili leaf freshness for 1-2 days?",
+    "jawaban": "Harvested leaves should be wrapped loosely in damp paper and kept in a cool place."
+  },
+  {
+    "id": 24,
+    "query": "What is the primary active compound in chili plants that is effective against pathogenic bacteria?",
+    "jawaban": "Capsaicin is the most studied active compound in chili plants."
+  },
+  {
+    "id": 25,
+    "query": "How much leaf volume can be safely harvested from a chili plant without affecting its vigor?",
+    "jawaban": "You should harvest no more than one-quarter (1/4) of the leaves from a single plant."
+  },
+  {
+    "id": 26,
+    "query": "What is the total time taken for the 'naive' chunking operation as per the chunking stats?",
+    "jawaban": "The operation took 1.7526 seconds for 7 files."
+  },
+  {
+    "id": 27,
+    "query": "How many words are contained in the 'cabai.txt' document according to its metadata?",
+    "jawaban": "The document contains 4,775 words."
+  },
+  {
+    "id": 28,
+    "query": "What strategy was used for the 'naive' chunking process mentioned in the JSON files?",
+    "jawaban": "The strategy used was 'naive_sentence'."
+  },
+  {
+    "id": 29,
+    "query": "Which document has the ID 'e0ff24fc-aab8-497e-89e6-aa115cb04757'?",
+    "jawaban": "The document is 'Factsheet11_CHILLI.pdf_0.txt'."
+  },
+  {
+    "id": 30,
+    "query": "What are the common tools used for packing chili fruits according to the SOP?",
+    "jawaban": "Common tools include cardboard boxes, wooden crates, and plastic mesh bags (karung waring)."
+  },
+  {
+    "id": 31,
+    "query": "What temperature range is optimal for growing Rawit chili plants?",
+    "jawaban": "The optimal temperature range is 26 - 28 degrees Celsius."
+  },
+  {
+    "id": 32,
+    "query": "What is the recommended annual rainfall for Rawit chili cultivation areas?",
+    "jawaban": "The recommended rainfall is 1,000 to 3,000 mm per year."
+  },
+  {
+    "id": 33,
+    "query": "At 37signals, what day is the deadline for writing 'Kickoff' announcements for new cycle projects?",
+    "jawaban": "The deadline is Friday of the second cooldown week."
+  },
+  {
+    "id": 34,
+    "query": "What is the preferred method of communication for urgent technical issues at 37signals to avoid interrupting flow?",
+    "jawaban": "The preferred method is asynchronous communication through pings, message posts, or to-do lists rather than immediate sync-ups."
+  },
+  {
+    "id": 35,
+    "query": "If a 37signals employee works emergency off-hours, how should they handle the extra time?",
+    "jawaban": "They should use their discretion to take time off later in the week to make up for those extra hours."
+  },
+  {
+    "id": 36,
+    "query": "What is the concentration of Copper (Cu) in chili leaves in mg/kg dry weight?",
+    "jawaban": "The concentration is 26 mg/kg dry weight."
+  },
+  {
+    "id": 37,
+    "query": "Which plant was chili compared to in the mineral nutrient analysis table?",
+    "jawaban": "It was compared to 'sandpaper cabbage' (Ficus spp.) and English cabbage."
+  },
+  {
+    "id": 38,
+    "query": "What is the height range of a Katokkon chili plant?",
+    "jawaban": "The height ranges from 60 to 155 cm."
+  },
+  {
+    "id": 39,
+    "query": "What color is the flower stalk (gagang bunga) of the Katokkon chili?",
+    "jawaban": "The flower stalk color is 'green group 143 C'."
+  },
+  {
+    "id": 40,
+    "query": "What is the length of the flower pedicel (gagang bunga) in Katokkon chili?",
+    "jawaban": "The length is 1.2 to 1.3 cm."
+  },
+  {
+    "id": 41,
+    "query": "How is the leaf texture of the Katokkon chili described?",
+    "jawaban": "The leaf texture is described as smooth (halus)."
+  },
+  {
+    "id": 42,
+    "query": "What is the fruit shape of the Katokkon chili?",
+    "jawaban": "The fruit shape is described as a short capsule with slightly wavy skin."
+  },
+  {
+    "id": 43,
+    "query": "What is the length of the leaf petiole for a Katokkon chili plant?",
+    "jawaban": "The petiole length is between 2 to 7 cm."
+  },
+  {
+    "id": 44,
+    "query": "What is the leaf area range for a Katokkon chili leaf?",
+    "jawaban": "The leaf area is 137.016 to 165.396 square centimeters."
+  },
+  {
+    "id": 45,
+    "query": "What is the flower position of the Katokkon chili plant?",
+    "jawaban": "The flower position is upright (tegak)."
+  },
+  {
+    "id": 46,
+    "query": "What is the leaf color group for the Katokkon chili?",
+    "jawaban": "The leaf color belongs to 'green group 143 A'."
+  },
+  {
+    "id": 47,
+    "query": "How many sentences are in the first chunk of the Letter of Intent document?",
+    "jawaban": "The first chunk contains 10 sentences."
+  },
+  {
+    "id": 48,
+    "query": "Who is the lead researcher from UNISZA mentioned in the Letter of Intent?",
+    "jawaban": "Dr. Azwa Abdul Aziz is the lead researcher from UNISZA."
+  },
+  {
+    "id": 49,
+    "query": "What is the reference number of the Letter of Intent from Telkom University?",
+    "jawaban": "The reference number is 031/LIT04/PPM-LIT/2026."
+  },
+  {
+    "id": 50,
+    "query": "What is the subject of the Letter of Intent dated April 2, 2026?",
+    "jawaban": "The subject is 'Letter of Intent International for International Joint Research Program Between TEL-U and UNISZA Fiscal Year of 2025'."
+  }
+]
